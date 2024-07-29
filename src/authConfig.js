@@ -17,7 +17,7 @@ export const msalConfig = {
   auth: {
     clientId: process.env.REACT_APP_APPLICATION_ID,
     authority: `https://login.microsoftonline.com/${process.env.REACT_APP_TENANT_ID}`,
-    redirectUri: "http://localhost:3000",
+    redirectUri: window.location.href,
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
